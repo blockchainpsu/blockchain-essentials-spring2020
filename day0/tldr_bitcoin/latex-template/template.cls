@@ -28,7 +28,7 @@
 %                      Fonts
 %--------------------------------------------------
 % Change main font to VictorMono for ligatures
-\setmainfont[Path = latex-template/fonts/, UprightFont = *-Regular, BoldFont = *-Bold, ItalicFont = *-Italic, BoldItalicFont = *-BoldItalic] {VictorMono}
+\setmainfont[Path = latex-template/fonts/, UprightFont = *-Regular, BoldFont = *-Bold, ItalicFont = *-Italic, BoldItalicFont = *-BoldItalic] {NunitoSans}
 
 \setfontfamily\FA[Path = latex-template/fonts/]{FontAwesome}
 %--------------------------------------------------                             

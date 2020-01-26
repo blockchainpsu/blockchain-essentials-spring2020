@@ -23,3 +23,9 @@ The topics are as follows:
 | Introduction | Workshop Overview, Bitcoin Case Study |
 | Full-Stack Development with JavaScript | Communication between client and server, NodeJS, basic UI prototyping|
 | TBD | TBD |
+
+## Contributing
+
+If you see any glaring errors, such as typos or conceptual mishaps, feel free to open an issue or make a pull request. If you'd like to join our team at Blockchain@PSU, fill out [this form](https://tinyurl.com/blockchainpsu-team-application).
+
+Join our [Slack](https://tinyurl.com/blockchainpsu-slack) to stay in touch.
