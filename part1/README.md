@@ -47,7 +47,7 @@ Before we begin creating a web app, we need to understand the fundamentals and, 
 
 Full-stack development involves the creation and maintainence of several layers behind your app. In most cases, there will be three layers: the client (frontend), server (backend), and database. Web sequence diagrams are very helpful when trying to understand how information moves from one layer to the next.
 
-![web sequence diagram](https://www.websequencediagrams.com/index.php?png=msc868200826)
+![web sequence diagram](https://raw.githubusercontent.com/blockchainpsu/blockchain-essentials-spring2020/mern/part1/websequencediagram.png)
 
 ###  Additional Information
 
