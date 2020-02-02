@@ -1,4 +1,4 @@
-﻿# Full-Stack Development
+# Full-Stack Development
 
 You've probably heard of full-stack development before.
 
@@ -14,7 +14,8 @@ Before we begin, we need to make sure that everything necessary is installed.
 
 1. Download [Git](https://git-scm.com/downloads), if you haven't already. We'll use this for version control and pushing files to GitHub. After downloading, check that everything works by running `git --version` in the terminal; there should be no errors.
 2. Download [Node.js](https://nodejs.org/en/download/). We'll use this for our applications' backend. Check that everything works by running `node -v` and `npm -v` in the terminal---they should only output the version number.
-3. Download an IDE that you're familiar with. We recommend using [Visual Studio Code](https://code.visualstudio.com/) if you're unsure about what you want.
+3. Download [MongoDB](https://www.mongodb.com/download-center/community). We'll use this as the framework for our database. Probably won't get to this the first workshop, but will definitely be useful for the second.
+4. Download an IDE that you're familiar with. We recommend using [Visual Studio Code](https://code.visualstudio.com/) if you're unsure about what you want.
 
 ## Requests and API Calls
 
