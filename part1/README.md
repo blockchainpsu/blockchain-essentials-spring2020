@@ -58,4 +58,16 @@ Some of this information was shamelessly taken from Mozilla's tutorial [here](ht
 
 MERN is one of the groups of frameworks used to create web applications. 
 
-MERN stands for MongoDB, Express, React, and Node. In our workshop, we'll start by using all four to create our web apps. 
+MERN stands for MongoDB, Express, React, and Node. In our workshop, we'll start by using all four to create our web apps.
+
+## JavaScript
+
+### Why JavaScript
+
+JavaScript is a very powerful and versatile programming language. It has many frameworks which help in developing specific parts of an application. It is mainly used for web development, but with its abundance of frameworks and versatility it can be used for pretty much anything.
+
+### Learning JavaScript
+
+As most of you know how to code, picking up a new programming language will be relatively easy. It just takes some time to get used to the syntax. 
+Here is a JavaScript cheat sheet that you can refer to: https://htmlcheatsheet.com/js/
+
