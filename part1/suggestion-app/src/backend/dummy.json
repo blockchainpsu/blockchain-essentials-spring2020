@@ -1,16 +1,13 @@
 [
 	{
-		"id": 1,
 		"subject": "Teaching Style",
 		"body": "You guys are ass at teaching :/"
 	},
 	{
-		"id": 2,
 		"subject": "Content",
 		"body": "Cool start, but I'd like to see more about React and Node."
 	},
 	{
-		"id": 3,
 		"subject": "Club Structure",
 		"body": "Congrats on your credit course! That's super cool!"
 	}

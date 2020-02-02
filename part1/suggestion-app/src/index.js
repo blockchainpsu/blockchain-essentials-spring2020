@@ -1,14 +1,14 @@
-import React from 'react';
-import { BrowserRouter as Router, Route, Link } from 'react-router-dom' 
-import 'bulma/css/bulma.css';
-import ReactDOM from 'react-dom';
+// imports go here
 
-import List from './components/list'
-import SuggestionForm from './components/suggestionform'
+// import components here
 
+// main React component to be rendered
 const App = () => {
 	return (
 		<Router>
+
+			{/* This is a navbar. Keep most of this unchanged */}
+			
 			<nav className='navbar is-primary' role='navigation' aria-label='main-navigation'>
 				<div className='navbar-brand'>
 					<a className='navbar-item' href='https://blockchainpsu.com'>
@@ -17,23 +17,22 @@ const App = () => {
 				</div>
 				<div className='navbar-menu'>
 					<div className='navbar-start'>
-						<Link to='/' className='navbar-item'>
-							Home
-						</Link>
-						<Link to='/create' className='navbar-item'>
-							Create a Suggestion
-						</Link>
+						
+						{/* Create navbar entries here as Links */}
+
 					</div>
 					<div className='navbar-end'>
 					</div>
 				</div>
 			</nav>
-			<Route path='/' exact component={List} />
-			<Route path='/create' component={SuggestionForm} />
+			
+			{/* Create Routes here to import components */}
+			
+			{/* This is a footer. Keep this mostly unchanged */}
 			<footer className='footer'>
 				<div className='content has-text-centered'>
 					<p>
-						<strong>Suggestions List</strong> by Justin Huang for <a href='https://blockchainpsu.com'>Blockchain@PSU</a>.
+						<strong>Suggestions List</strong> by YOUR NAME for <a href='https://blockchainpsu.com'>Blockchain@PSU</a>.
 					</p>
 				</div>
 			</footer>
@@ -41,4 +40,5 @@ const App = () => {
 	)
 }
 
+// sends App component to HTML document to be rendered
 ReactDOM.render(<App />, document.getElementById('root'))

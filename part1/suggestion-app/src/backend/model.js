@@ -1,11 +1,8 @@
-const mongoose = require('mongoose')
-const Schema = mongoose.Schema;
+// imports go here
 
-const suggSchema = new Schema({
-	subject: String,
-	body: String
-})
+// Create your schema here
 
+{/* Don't change this. Essentially changes mongodb _id field to a String field and deletes the version field */}
 suggSchema.set('toJSON', {
 	transform: (document, returnedObject) => {
 		returnedObject.id = returnedObject._id.toString()
@@ -14,4 +11,4 @@ suggSchema.set('toJSON', {
 	}
 })
 
-module.exports = mongoose.model('Suggestion', suggSchema)
+// export your schema here

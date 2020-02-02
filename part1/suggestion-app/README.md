@@ -12,7 +12,9 @@ npx create-react-app suggestion-app
 After the commands finish running, `cd` into the app's directory and install the following packages:
 
 ```
-TODO: Add dependencies here.
-npm install bulma --save
-npm install express --save
+// TODO: Add dependencies here.
+npm install bulma react-router-dom --save
+
+// For backend: 
+npm install express cors mongoose
 ```
