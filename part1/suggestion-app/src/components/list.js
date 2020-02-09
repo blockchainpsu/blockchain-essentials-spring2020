@@ -10,35 +10,36 @@ const Suggestion = (props) => (
 )
 
 const List = () => {
-	const [ suggestions, setSuggestions ] = useState({ suggestions: [] })
+	const [ suggestions, setSuggestions ] = useState({ suggestions: [{subject: 'hi', body: 'hi'}] })
 
-	const SuggestionList = (props) => {
-		return (
-			<tbody>
-				{props.content.map((suggestion, i) => <Suggestion content={suggestion} key={i} />)}
-			</tbody>
-		)
+	const generateList = () => {
+		if (suggestions.length) {
+			return suggestions.map((suggestion, i) => <Suggestion content={suggestion} key={i} />)
+		} else {
+			return null
+		}
 	}
 
-	const handleSetSuggestions = () => setSuggestions(res.data)
+	const handleSetSuggestions = (res) => setSuggestions(res.data)
 
 	useEffect(() => {
 		axios.get('http://127.0.0.1:3001/suggestions/')
-			.then(handleSetSuggestions())
-			.catch((err) => console.log(err)) 
+			.then(res => handleSetSuggestions(res))
+			.catch((err) => console.log(err))
 	})
 
 	return (
 		<div class="container">
-			<h3>List of Suggestions</h3>
-			<table className="table table-striped" style={{ marginTop: 20 }}>
+			<table className="table is-fullwidth is-hoverable" style={{ marginTop: 20 }}>
 				<thead>
 					<tr>
 						<th>Subject</th>
 						<th>Suggestion</th>
 					</tr>
 				</thead>
-				<SuggestionList content={suggestions.suggestions} />
+				<tbody>
+					{generateList()}
+				</tbody>
 			</table>
 		</div>
 	)

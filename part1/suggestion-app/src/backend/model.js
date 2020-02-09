@@ -14,4 +14,4 @@ suggSchema.set('toJSON', {
 	}
 })
 
-module.exports = mongoose.model('Suggestion', suggSchema)
+module.exports = mongoose.model('suggestions', suggSchema)

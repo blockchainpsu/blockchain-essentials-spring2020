@@ -2,8 +2,10 @@ const express = require('express')
 const app = express()
 const cors = require('cors')
 const mongoose = require('mongoose')
+const bodyParser = require('body-parser')
 
 app.use(cors())
+app.use(bodyParser.json())
 
 mongoose.connect('mongodb://127.0.0.1:27017/suggestions', { useNewUrlParser: true })
 const connection = mongoose.connection
@@ -15,6 +17,12 @@ connection.once('open', () => {
 const routes = express.Router()
 
 app.use('/suggestions', routes);
+
+app.all('/*', function(req, res, next) {
+  res.header("Access-Control-Allow-Origin", "*");
+  res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+  next();
+});
 
 let Suggestion = require('./model')
 routes.route('/').get((req, res) => {
@@ -38,19 +46,5 @@ routes.route('/add').post(function(req, res) {
         })
 })
 
-//const fs = require('fs')
-//let dummy = JSON.parse(fs.readFileSync('dummy.json', 'utf-8'))
-//app.get('/all', (req, res) => {
-//	res.json(dummy)
-//})
-//
-//app.get('/all/:id', (req, res) => {
-//	const id = Number(req.params.id)
-//	console.log(id)
-//	const sugg = dummy.find(sugg => sugg.id === id)
-//	console.log(sugg)
-//	res.json(sugg)
-//})
-//
 const PORT = 3001
 app.listen(PORT)
