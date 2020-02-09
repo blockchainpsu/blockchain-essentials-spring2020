@@ -1,8 +1,10 @@
 // imports go here
 
-// Create your schema here
+const suggSchema = new Schema({
+	// Add fields here
+})
 
-{/* Don't change this. Essentially changes mongodb _id field to a String field and deletes the version field */}
+/* Don't change this. Essentially changes mongodb _id field to a String field and deletes the version field */
 suggSchema.set('toJSON', {
 	transform: (document, returnedObject) => {
 		returnedObject.id = returnedObject._id.toString()
